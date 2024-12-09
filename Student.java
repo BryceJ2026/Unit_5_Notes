@@ -6,8 +6,13 @@ Object-Orianited Classes are like BLUEPRINTS
 public class Student {
     // 1. INSTANCE VARIABLE (attributes/data)
     //think of what this object needs to know
-String name; //"A student has a name"
-int gradYear;
+    //must be PRIVATE ("encapsulation")
+private String name; //"A student has a name"
+private int gradYear;
+private String email;
+private boolean sports;
+double gpa;
+
     //2.CONSTRUCTION (manuals for setting up an object)
 
 
