@@ -8,27 +8,39 @@ public class Student {
     //think of what this object needs to know
     //must be PRIVATE ("encapsulation")
 private String name; //"A student has a name"
+private String firstName;
+private String lastName;
 private int gradYear;
 private String email;
 private boolean sports;
 double gpa;
 
     //2.CONSTRUCTION (manuals for setting up an object)
+
+    //DEFAULT consturctor (user did not provide data)
+    //"no-arguement" constructor
+
 public Student() {
     name = "None";
-    gradYear = "2037";
+    gradYear = 2037;
     email = name + gradYear + "@gbwl.org";
 }
 //Constuctor with PARAMETERS (user provided key data)
 //Job: initialize instance variables to PROVIDED values
+//ORDER OF PARAMETERS IS IMPORTANT!!! (the data types)
+//"initFirstName", etc. are like PLACEHOLDERS for real values
 public Student(String initFName, String initlName, int initGradYear){
-    fName = initFName;
-    lName = initlName;
+    firstName = initFName;
+    lastName = initlName;
     gradYear = initGradYear;
-    email = fname + "." + lName + gradYear + "@gbwl.org";
+    email = firstName + "." + lastName + gradYear + "@gbwl.org";
 }
     // 3. METHODS (behaviors associated with that object)
     
-    
+    //toString method provides a "Sting Representation"
+    //of an object instance with all its data!
+    public String toString(){
+        return ("Student[" + firstName + "," + lastName + "," + gradYear + "," + email + "]");
+    }
     
 }
