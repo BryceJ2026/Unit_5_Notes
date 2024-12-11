@@ -14,9 +14,19 @@ private boolean sports;
 double gpa;
 
     //2.CONSTRUCTION (manuals for setting up an object)
-
-
-
+public Student() {
+    name = "None";
+    gradYear = "2037";
+    email = name + gradYear + "@gbwl.org";
+}
+//Constuctor with PARAMETERS (user provided key data)
+//Job: initialize instance variables to PROVIDED values
+public Student(String initFName, String initlName, int initGradYear){
+    fName = initFName;
+    lName = initlName;
+    gradYear = initGradYear;
+    email = fname + "." + lName + gradYear + "@gbwl.org";
+}
     // 3. METHODS (behaviors associated with that object)
     
     
