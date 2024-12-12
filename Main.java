@@ -17,11 +17,11 @@ public class Main {
       System.out.println(kinder);
 // Consturct two more Student objects and fill them out
 
-Student sophmore = new Student("Random" , "Person" , 2027);
+// TEst ACESSOR/GETTER METHODS
+String juniorEmail = junior.getEmail();
+System.out.println(juniorEmail);
 
-Student Freshman = new Student("Random" , "Person" , 2028);
-
-
+System.out.println(kinder.getEmail());
 
 
 

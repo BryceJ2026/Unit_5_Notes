@@ -42,5 +42,18 @@ public Student(String initFName, String initlName, int initGradYear){
     public String toString(){
         return ("Student[" + firstName + "," + lastName + "," + gradYear + "," + email + "]");
     }
+
+    public String getFirstName(){
+return firstName;
+    }
+    public String getLastName(){
+return lastName;
+    }
+    public int getGradYear(){
+        return gradYear;
+    }
+    public String getEmail(){
+        return email;
+    }
     
 }
