@@ -23,7 +23,12 @@ System.out.println(juniorEmail);
 
 System.out.println(kinder.getEmail());
 
-
-
+// Test
+//void methods(no output)
+// but they need an arguement (input)
+kinder.setFirstName("Horah");
+kinder.setLastName("Loux");
+System.out.println(kinder);
+// I didn't need to setGradYear because the Default Constructor gave an appropriate value for this already (we chose 2037 as the dafault)
    }
 }

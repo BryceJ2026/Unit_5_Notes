@@ -55,5 +55,21 @@ return lastName;
     public String getEmail(){
         return email;
     }
+
+    //MUTATOR METHODS ("Setters") accept a nnew value
+    // and change the instance variable to it
+    //Setters are VOID meaning NO RETURN VALUE (output)
+    public void setFirstName(String newFirstName) {
+        firstName = newFirstName;
+    }
+    public void setLastName(String newLastname) {
+        lastName = newLastName;
+    }
+    public void setEmail(String newEmail) {
+        email = newEmail;
+    }
+    public void setGradYear(int newGradYear) {
+        gradYear = newGradYear;
+    }
     
 }
