@@ -71,5 +71,22 @@ return lastName;
     public void setGradYear(int newGradYear) {
         gradYear = newGradYear;
     }
+
+    //OTHER METHOD (behaviors/actions assciated with the object)
+
+    //Example: VOID method, no parameters
+    public void complain() {
+//Method BODY is the step(s) for this process
+        System.out.ptinln("I am getting no sleep");
+    }
+    public void doHomework(int numAssignments) {
+        //Printa message for each assignment completed
+        for (int i = numAssignments; i > 0; i--){
+            System.out.println("Working");
+
+        }
+        System.out.println("Done.");
+    }
+
     
 }
