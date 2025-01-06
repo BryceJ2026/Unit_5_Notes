@@ -38,5 +38,9 @@ boolean isEqual = junior.equals(kinder);
 junior.complain();
 //Example: no output, NEEDS input
 junior.doHomework(8);
+
+
+///Testing the student class documenttation
+StudentDocs test = new StudentDocs()
    }
 }
