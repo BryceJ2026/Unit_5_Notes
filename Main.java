@@ -40,7 +40,11 @@ junior.complain();
 junior.doHomework(8);
 
 
-///Testing the student class documenttation
-StudentDocs test = new StudentDocs()
+//Testing the student class documenttation
+// HOVER over the words to view the docs we wrote
+StudentDocs test = new StudentDocs("Roaree", "Lion", 2025);
+test.getEmail();
+test.setGradYear(2025);
+test.doHomework(10);
    }
 }
