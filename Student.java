@@ -12,8 +12,13 @@ private String firstName;
 private String lastName;
 private int gradYear;
 private String email;
-private boolean sports;
 double gpa;
+//STATIC variables for data that should only have ONE COPY for an entire class
+private static int currentYear = 2025;
+private static String schoolName = "BWL";
+private static int studentCount = 0;
+//static does not mean unchaing/constant
+//instead, the keyword FINAL would be used
 
     //2.CONSTRUCTION (manuals for setting up an object)
 
@@ -34,6 +39,8 @@ public Student(String initFName, String initlName, int initGradYear){
     lastName = initlName;
     gradYear = initGradYear;
     email = firstName + "." + lastName + gradYear + "@gbwl.org";
+    //increment the student object counter static variable
+    studentCount++;
 }
     // 3. METHODS (behaviors associated with that object)
     
@@ -62,7 +69,7 @@ return lastName;
     public void setFirstName(String newFirstName) {
         firstName = newFirstName;
     }
-    public void setLastName(String newLastname) {
+    public void setLastName(String newLastName) {
         lastName = newLastName;
     }
     public void setEmail(String newEmail) {
@@ -77,7 +84,7 @@ return lastName;
     //Example: VOID method, no parameters
     public void complain() {
 //Method BODY is the step(s) for this process
-        System.out.ptinln("I am getting no sleep");
+        System.out.println("I am getting no sleep");
     }
     public void doHomework(int numAssignments) {
         //Printa message for each assignment completed
@@ -87,6 +94,11 @@ return lastName;
         }
         System.out.println("Done.");
     }
+// Example interact with a static variable
+//METHODS can also be STATIC - menaing tat the beahavior/ action
+public static void printObjectCount(){
+    System.out.println(studentCount);
 
+}
     
 }

@@ -98,7 +98,7 @@ return lastName;
      */
     public void complain() {
 
-        System.out.ptinln("I am getting no sleep");
+        System.out.println("I am getting no sleep");
     }
     /**
      * Loos from numAssignments, decreasing till there are zero assignments left
