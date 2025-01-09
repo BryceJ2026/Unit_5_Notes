@@ -26,19 +26,24 @@ private static int studentCount = 0;
     //"no-arguement" constructor
 
 public Student() {
-    name = "None";
+    this.firstName = "First";
+    this.lastName = "Last";
     gradYear = 2037;
-    email = name + gradYear + "@gbwl.org";
+    email = firstName + "." + lastName + gradYear + "@gbwl.org";
+    //increment the student object ccounter STATIC variable
+    // do not use this.studentCount because it is data belonging to the CLASS, not an object instance
+    studentCount++;
 }
 //Constuctor with PARAMETERS (user provided key data)
 //Job: initialize instance variables to PROVIDED values
 //ORDER OF PARAMETERS IS IMPORTANT!!! (the data types)
 //"initFirstName", etc. are like PLACEHOLDERS for real values
-public Student(String initFName, String initlName, int initGradYear){
-    firstName = initFName;
-    lastName = initlName;
-    gradYear = initGradYear;
-    email = firstName + "." + lastName + gradYear + "@gbwl.org";
+public Student(String firstName, String lastName, int gradYear){
+    //THIS keyword indicates CURRENT CALLING OBJECT
+    this.firstName = initFName;
+    this.lastName = initlName;
+    this.gradYear = initGradYear;
+    this.email = firstName + "." + lastName + gradYear + "@gbwl.org";
     //increment the student object counter static variable
     studentCount++;
 }
